@@ -43,8 +43,8 @@ const HeroSection = () => {
             <span className="text-xs font-semibold transform rotate-90">0</span>
             <span className="text-xs font-semibold transform rotate-90">6</span>
             <span className="text-xs font-semibold transform rotate-90">6</span>
-          </div>
-          
+      </div>
+
           {/* Scroll to Top Button */}
           {/* <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -52,10 +52,10 @@ const HeroSection = () => {
           >
             <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
+                  </svg>
           </button> */}
         </Link>
-      </div>
+            </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="w-full">
