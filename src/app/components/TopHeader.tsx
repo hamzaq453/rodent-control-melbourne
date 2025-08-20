@@ -19,8 +19,8 @@ const TopHeader = () => {
             </span>
           </div>
 
-          {/* Contact Info - Always in row */}
-          <div className="flex items-center space-x-4 sm:space-x-6">
+          {/* Contact Info - Centered on mobile, right-aligned on desktop */}
+          <div className="flex items-center space-x-4 sm:space-x-6 sm:ml-auto">
             {/* Phone Number */}
             <div className="flex items-center space-x-2">
               <svg 

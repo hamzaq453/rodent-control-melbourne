@@ -4,6 +4,7 @@ import TopHeader from "./components/TopHeader";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <WhyChooseUsSection />
+      <Footer />
     </div>
   );
 }
