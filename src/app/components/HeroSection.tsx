@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className="relative  flex items-center overflow-hidden">
+    <section className="relative  flex items-center overflow-hidden py-5">
       {/* Video Background */}
       <video 
         autoPlay 
@@ -168,10 +168,10 @@ const HeroSection = () => {
                 </div>
 
                {/* Emergency Badge - Desktop */}
-               <div className="flex items-center space-x-2 pt-2">
+               {/* <div className="flex items-center space-x-2 pt-2">
                  <div className="bg-red-500 animate-pulse rounded-full w-2 h-2"></div>
                  <span className="text-xs font-medium">24/7 Emergency Service Available</span>
-               </div>
+               </div> */}
              </div>
 
                            {/* Right Content - Professional Service Showcase - Desktop */}
