@@ -144,7 +144,7 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#3687C9]/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
                 <div className="p-6 w-full">
                   <Link 
-                    href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    href="/services"
                     className="block w-full bg-white text-[#3687C9] font-semibold py-3 px-4 rounded-lg text-center hover:bg-[#2C6EA5] hover:text-white transition-all duration-300"
                   >
                     Learn More
@@ -158,7 +158,7 @@ const ServicesSection = () => {
         {/* View All Services Button */}
         <div className="text-center">
           <Link 
-            href="/" 
+            href="/services" 
             className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#3687C9] to-[#2C6EA5] hover:from-[#2C6EA5] hover:to-[#3687C9] text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             <span>View All Services</span>
