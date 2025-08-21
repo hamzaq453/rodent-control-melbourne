@@ -54,7 +54,7 @@ const WhyChooseUsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           {/* Subtitle */}
-          <div className="text-red-500 uppercase text-sm font-semibold tracking-wider mb-2">
+          <div className="text-[#FFA500] uppercase text-sm font-semibold tracking-wider mb-2">
             Why Hire Us
           </div>
           
@@ -78,7 +78,7 @@ const WhyChooseUsSection = () => {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature) => (
-            <div key={feature.id} className="bg-[#2A2A2A] rounded-lg p-6 border border-red-500 text-center hover:border-red-400 transition-colors duration-300">
+            <div key={feature.id} className="bg-[#2A2A2A] rounded-lg p-6 border border-[#FFA500] text-center hover:border-red-400 transition-colors duration-300">
               {/* Icon */}
               <div className="flex justify-center mb-4">
                 {feature.icon}
@@ -103,7 +103,7 @@ const WhyChooseUsSection = () => {
         <div className="text-center mt-10">
           <Link 
             href="/quote" 
-            className="inline-flex items-center space-x-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center space-x-2 bg-[#FFA500] hover:bg-[#FF8C00] text-white font-bold px-8 py-3 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             <span>Get Your Free Quote</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
