@@ -157,7 +157,7 @@ const ServicesPage = () => {
              src="/Services-1.png"
              alt="Professional pest control technician spraying"
              fill
-             className="object-cover"
+             className=" object-right-bottom"
              priority
            />
            {/* Dark Overlay for Text Readability */}
