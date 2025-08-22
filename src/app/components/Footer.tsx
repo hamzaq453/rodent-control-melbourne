@@ -119,7 +119,7 @@ const Footer = () => {
                   href="tel:0466660066" 
                   className="text-[#2C6EA5] hover:text-[#3687C9] transition-colors duration-300 text-sm"
                 >
-                  0466660066
+                  0451003300
                 </a>
               </div>
               
@@ -131,7 +131,7 @@ const Footer = () => {
                   href="mailto:contact@rodentcontrolmelbourne.com.au" 
                   className="text-[#2C6EA5] hover:text-[#3687C9] transition-colors duration-300 text-sm break-all"
                 >
-                  contact@rodentcontrolmelbourne.com.au
+                  info@rodentcontrolmelbourne.com
                 </a>
               </div>
               

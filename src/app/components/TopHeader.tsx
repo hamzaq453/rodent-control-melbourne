@@ -34,7 +34,7 @@ const TopHeader = () => {
                 href="tel:0466660066" 
                 className="text-xs font-medium hover:text-[#9AC3E4] transition-colors duration-200 whitespace-nowrap"
               >
-                0466660066
+                0451003300
               </a>
             </div>
 
@@ -52,7 +52,7 @@ const TopHeader = () => {
                 href="mailto:contact@rodentcontrolmelbourne.com.au" 
                 className="text-xs font-medium hover:text-[#9AC3E4] transition-colors duration-200 break-all"
               >
-                contact@rcm.com.au
+                info@rodentcontrolmelbourne.com
               </a>
             </div>
           </div>
@@ -67,10 +67,10 @@ const TopHeader = () => {
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
             <a 
-              href="tel:0466660066" 
+              href="tel:0451003300" 
               className="text-sm font-medium hover:text-[#9AC3E4] transition-colors duration-200 whitespace-nowrap"
             >
-              0466660066
+              0451003300
             </a>
           </div>
 
@@ -88,8 +88,8 @@ const TopHeader = () => {
               href="mailto:contact@rodentcontrolmelbourne.com.au" 
               className="text-sm font-medium hover:text-[#9AC3E4] transition-colors duration-200 break-all"
             >
-              <span className="hidden lg:inline">contact@rodentcontrolmelbourne.com.au</span>
-              <span className="lg:hidden">contact@rcm.com.au</span>
+              <span className="hidden lg:inline">info@rodentcontrolmelbourne.com</span>
+              <span className="lg:hidden">info@rodentcontrolmelbourne.com</span>
             </a>
           </div>
         </div>

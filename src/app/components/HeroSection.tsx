@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Vertical Call Now Button - Right Edge */}
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
         <Link 
-          href="tel:0466660066" 
+          href="tel:0451003300" 
           className="bg-[#3687C9] hover:bg-[#2C6EA5] text-white font-bold px-3 py-4 rounded-l-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center space-y-1"
         >
           {/* Phone Icon */}
@@ -35,14 +35,14 @@ const HeroSection = () => {
           <div className="flex flex-col items-center leading-none">
             <span className="text-xs font-semibold transform rotate-90">0</span>
             <span className="text-xs font-semibold transform rotate-90">4</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
+            <span className="text-xs font-semibold transform rotate-90">5</span>
+            <span className="text-xs font-semibold transform rotate-90">1</span>
             <span className="text-xs font-semibold transform rotate-90">0</span>
             <span className="text-xs font-semibold transform rotate-90">0</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
-            <span className="text-xs font-semibold transform rotate-90">6</span>
+            <span className="text-xs font-semibold transform rotate-90">3</span>
+            <span className="text-xs font-semibold transform rotate-90">3</span>
+            <span className="text-xs font-semibold transform rotate-90">0</span>
+            <span className="text-xs font-semibold transform rotate-90">0</span>
       </div>
 
           {/* Scroll to Top Button */}
@@ -120,10 +120,10 @@ const HeroSection = () => {
                 Get Free Quote
               </Link>
               <Link 
-                href="tel:0466660066" 
+                href="tel:0451003300" 
                 className="bg-[#9AC3E4] hover:bg-[#3687C9] text-[#2C6EA5] font-semibold px-6 py-3 rounded-lg text-base transition-all duration-300 border-2 border-[#9AC3E4] hover:border-[#3687C9]"
               >
-                Call Now: 0466660066
+                Call Now: 0451003300
               </Link>
             </div>
 
