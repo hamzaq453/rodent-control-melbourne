@@ -2,8 +2,25 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check if user prefers dark mode
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQuery.matches);
+
+    // Listen for changes in color scheme preference
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDarkMode(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   return (
     <section className="relative flex items-center overflow-hidden py-5">
       {/* Video Background */}
@@ -17,9 +34,8 @@ const HeroSection = () => {
         <source src="/Hero-vid.mp4" type="video/mp4" />
       </video>
       
-      {/* Brand Color Overlay for better text readability */}
-      <div className="absolute inset-0"></div>
-
+      {/* Dynamic Overlay based on color scheme preference */}
+      <div className={`absolute inset-0 ${isDarkMode ? 'bg-black/40' : 'bg-black/80'}`}></div>
       {/* Vertical Call Now Button - Right Edge */}
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
         <Link 
