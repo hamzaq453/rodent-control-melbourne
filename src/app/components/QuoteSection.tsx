@@ -7,11 +7,16 @@ const QuoteSection = () => {
     name: '',
     email: '',
     phone: '',
-    suburb: '',
-    description: ''
+    service: '',
+    message: '',
+    suburb: ''
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -19,10 +24,44 @@ const QuoteSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setStatusMessage('Message sent successfully! We\'ll get back to you soon.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: '',
+          suburb: ''
+        });
+      } else {
+        setSubmitStatus('error');
+        setStatusMessage(result.message || 'Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setStatusMessage('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -69,7 +108,7 @@ const QuoteSection = () => {
                 />
               </div>
 
-              {/* Second Row - Phone and Suburb */}
+              {/* Second Row - Phone and Service */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="tel"
@@ -80,34 +119,72 @@ const QuoteSection = () => {
                   className="w-full px-4 py-3 bg-white text-black rounded-lg border-0 focus:ring-2 focus:ring-[#FFA500] focus:outline-none transition-all duration-200"
                   required
                 />
-                <input
-                  type="text"
-                  name="suburb"
-                  value={formData.suburb}
+                <select
+                  name="service"
+                  value={formData.service}
                   onChange={handleInputChange}
-                  placeholder="Suburb or Postcode"
                   className="w-full px-4 py-3 bg-white text-black rounded-lg border-0 focus:ring-2 focus:ring-[#FFA500] focus:outline-none transition-all duration-200"
-                  required
-                />
+                >
+                  <option value="">Select a service</option>
+                  <option value="rodent-control">Rodent Control</option>
+                  <option value="possum-removal">Possum Removal</option>
+                  <option value="spider-control">Spider Control</option>
+                  <option value="ant-control">Ant Control</option>
+                  <option value="bedbug-control">Bedbug Control</option>
+                  <option value="general-pest-control">General Pest Control</option>
+                  <option value="emergency-service">Emergency Service</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
 
-              {/* Description Textarea */}
-              <textarea
-                name="description"
-                value={formData.description}
+              {/* Third Row - Suburb */}
+              <input
+                type="text"
+                name="suburb"
+                value={formData.suburb}
                 onChange={handleInputChange}
-                placeholder="Short Description"
+                placeholder="Suburb or Postcode"
+                className="w-full px-4 py-3 bg-white text-black rounded-lg border-0 focus:ring-2 focus:ring-[#FFA500] focus:outline-none transition-all duration-200"
+                required
+              />
+
+              {/* Message Textarea */}
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Describe your pest problem and any specific requirements..."
                 rows={4}
                 className="w-full px-4 py-3 bg-white text-black rounded-lg border-0 focus:ring-2 focus:ring-[#FFA500] focus:outline-none transition-all duration-200 resize-none"
                 required
               ></textarea>
 
+              {/* Status Message */}
+              {submitStatus === 'success' && (
+                <div className="flex items-center space-x-2 p-3 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-medium">{statusMessage}</span>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="flex items-center space-x-2 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                  <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-medium">{statusMessage}</span>
+                </div>
+              )}
+
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#FFA500] hover:bg-[#FF8C00] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                disabled={isSubmitting}
+                className="w-full bg-[#FFA500] hover:bg-[#FF8C00] disabled:bg-gray-400 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg disabled:transform-none"
               >
-                Book Now
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>

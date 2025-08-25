@@ -2,8 +2,67 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setStatusMessage('Message sent successfully! We\'ll get back to you within 24 hours.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus('error');
+        setStatusMessage(result.message || 'Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setStatusMessage('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header Section */}
@@ -127,7 +186,7 @@ const ContactPage = () => {
                   For urgent pest control emergencies, please call us directly.
                 </p>
 
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
                     <div>
@@ -138,6 +197,8 @@ const ContactPage = () => {
                         type="text"
                         id="name"
                         name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                         placeholder="Enter your full name"
@@ -153,6 +214,8 @@ const ContactPage = () => {
                         type="email"
                         id="email"
                         name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                         placeholder="Enter your email address"
@@ -170,6 +233,8 @@ const ContactPage = () => {
                         type="tel"
                         id="phone"
                         name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                         placeholder="Enter your phone number"
@@ -184,6 +249,8 @@ const ContactPage = () => {
                       <select
                         id="service"
                         name="service"
+                        value={formData.service}
+                        onChange={handleInputChange}
                         className="w-full px-4 py-3 border text-gray-700 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                       >
                         <option value="" className='text-gray-700'>Select a service</option>
@@ -207,6 +274,8 @@ const ContactPage = () => {
                     <textarea
                       id="message"
                       name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
                       rows={6}
                       required
                       className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200 resize-none"
@@ -214,13 +283,33 @@ const ContactPage = () => {
                     ></textarea>
                   </div>
 
+                  {/* Status Message */}
+                  {submitStatus === 'success' && (
+                    <div className="flex items-center space-x-2 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                      <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="font-medium">{statusMessage}</span>
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className="flex items-center space-x-2 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                      <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                      </svg>
+                      <span className="font-medium">{statusMessage}</span>
+                    </div>
+                  )}
+
                   {/* Submit Button */}
                   <div className="flex flex-col sm:flex-row gap-4">
                     <button
                       type="submit"
-                      className="flex-1 bg-[#3687C9] hover:bg-[#2C6EA5] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+                      disabled={isSubmitting}
+                      className="flex-1 bg-[#3687C9] hover:bg-[#2C6EA5] disabled:bg-gray-400 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
                     >
-                      Send Message
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                     </button>
                     <Link
                       href="/quote"
