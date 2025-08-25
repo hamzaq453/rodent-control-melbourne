@@ -15,7 +15,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '0451003300';
+    const phoneNumber = '+61451003300';
     const message = encodeURIComponent("Hi! I'm interested in your pest control services. Can you help me?");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
