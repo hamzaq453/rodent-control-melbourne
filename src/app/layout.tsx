@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import TopHeader from "./components/TopHeader";
 import Navbar from "./components/Navbar";
 import FloatingCallButton from "./components/FloatingCallButton";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         <ConditionalQuoteSection />
         <Footer />
         <FloatingCallButton />
+        <WhatsAppButton />
       </body>
     </html>
   );
