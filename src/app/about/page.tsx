@@ -2,8 +2,12 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const AboutPage = () => {
+  // Scroll animation hooks for different sections
+  const missionSection = useScrollAnimation(0.2);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header Section */}
@@ -269,9 +273,9 @@ const AboutPage = () => {
       </section>
 
       {/* Mission & Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" ref={missionSection.elementRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
+          <div className={`text-center mb-16 transition-all duration-1500 ${missionSection.isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-6 hover:text-[#3687C9] transition-colors duration-300">
               Our Mission & Values
             </h2>
@@ -283,7 +287,7 @@ const AboutPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Mission */}
-            <div className="text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up group" style={{ animationDelay: '100ms' }}>
+            <div className={`text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-1200 group ${missionSection.isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: missionSection.isVisible ? '100ms' : '0ms' }}>
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -297,7 +301,7 @@ const AboutPage = () => {
             </div>
 
             {/* Vision */}
-            <div className="text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up group" style={{ animationDelay: '200ms' }}>
+            <div className={`text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-500 group ${missionSection.isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: missionSection.isVisible ? '200ms' : '0ms' }}>
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -312,7 +316,7 @@ const AboutPage = () => {
             </div>
 
             {/* Values */}
-            <div className="text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up group" style={{ animationDelay: '300ms' }}>
+            <div className={`text-center p-8 bg-gradient-to-br from-[#2C6EA5] to-[#1E4A6B] rounded-2xl text-white hover:shadow-2xl hover:transform hover:-translate-y-2 transition-all duration-500 group ${missionSection.isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: missionSection.isVisible ? '300ms' : '0ms' }}>
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -331,7 +335,7 @@ const AboutPage = () => {
       {/* Why Choose Us Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
+          <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-6 hover:text-[#3687C9] transition-colors duration-300">
               Why Choose Rodent Control Melbourne?
             </h2>
@@ -342,7 +346,7 @@ const AboutPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Licensed & Certified */}
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up group" style={{ animationDelay: '100ms' }}>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
               <div className="w-16 h-16 bg-[#3687C9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#2C6EA5] transition-all duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -353,7 +357,7 @@ const AboutPage = () => {
             </div>
 
             {/* 24/7 Availability */}
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up group" style={{ animationDelay: '200ms' }}>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
               <div className="w-16 h-16 bg-[#3687C9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#2C6EA5] transition-all duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -364,7 +368,7 @@ const AboutPage = () => {
             </div>
 
             {/* Eco-Friendly */}
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up group" style={{ animationDelay: '300ms' }}>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
               <div className="w-16 h-16 bg-[#3687C9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#2C6EA5] transition-all duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -375,7 +379,7 @@ const AboutPage = () => {
             </div>
 
             {/* Guaranteed Results */}
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up group" style={{ animationDelay: '400ms' }}>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
               <div className="w-16 h-16 bg-[#3687C9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#2C6EA5] transition-all duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -393,7 +397,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-[#3687C9] rounded-full px-4 py-2 mb-6">
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-white rounded-full"></div>
               <span className="text-white text-sm font-medium">Service Areas</span>
             </div>
             
