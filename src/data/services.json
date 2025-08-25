@@ -352,7 +352,1281 @@
         "title": "Need Professional Bees Removal?",
         "description": "Contact us for safe, humane bee removal and relocation services in Melbourne.",
         "buttonText": "Get Free Quote"
-      }
-    }
-  }
+             }
+     },
+     "possum-catcher": {
+       "title": "Possum Catcher",
+       "heroTitle": "Professional Possum Catcher Services",
+       "heroSubtitle": "Expert Possum Catching and Relocation in Melbourne",
+       "heroDescription": "Professional possum catching and relocation services with proper permits and humane treatment methods.",
+       "heroImage": "/RC-2.png",
+       "overview": {
+         "title": "Professional Possum Catcher Services",
+         "subtitle": "Expert Possum Catching and Relocation",
+         "description": "Our certified possum catchers provide safe, legal, and humane possum catching services with proper relocation to suitable habitats.",
+         "features": [
+           "Certified possum catchers",
+           "Humane catching methods",
+           "Proper permits and licensing",
+           "Safe relocation to suitable habitats",
+           "Emergency catching services"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Uncontrolled Possum Populations",
+         "description": "Without proper management, possum populations can cause various issues:",
+         "risks": [
+           {
+             "title": "Property Damage",
+             "description": "Possums can damage roofs, gutters, and insulation when nesting in buildings."
+           },
+           {
+             "title": "Health Risks",
+             "description": "Possum droppings and urine can carry diseases and parasites."
+           },
+           {
+             "title": "Noise Disturbance",
+             "description": "Nocturnal activities can disrupt sleep and daily routines."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Possum Catcher Services",
+         "benefits": [
+           {
+             "title": "Certified Catchers",
+             "description": "Our team includes certified possum catchers with proper training and permits."
+           },
+           {
+             "title": "Humane Methods",
+             "description": "We use humane catching techniques that prioritize animal welfare."
+           },
+           {
+             "title": "Legal Compliance",
+             "description": "All catching activities comply with Australian wildlife protection laws."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Possum Catching Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Site Assessment",
+             "description": "Evaluate the property to identify possum activity and entry points."
+           },
+           {
+             "step": "2",
+             "title": "Safe Catching",
+             "description": "Use humane methods to safely capture possums without harm."
+           },
+           {
+             "step": "3",
+             "title": "Health Check",
+             "description": "Assess possum health and condition before relocation."
+           },
+           {
+             "step": "4",
+             "title": "Safe Relocation",
+             "description": "Transport to approved relocation sites with suitable habitat."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you need a permit for possum catching?",
+           "answer": "Yes, possum catching requires proper permits and licensed professionals."
+         },
+         {
+           "question": "How do you catch possums humanely?",
+           "answer": "We use specialized equipment and techniques designed to minimize stress and harm."
+         },
+         {
+           "question": "Where do you relocate the possums?",
+           "answer": "We relocate to approved areas with suitable habitat and food sources."
+         }
+       ],
+       "cta": {
+         "title": "Need Professional Possum Catching?",
+         "description": "Contact us for safe, legal, and humane possum catching services.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "dead-animal-removal": {
+       "title": "Dead Animal Removal",
+       "heroTitle": "Professional Dead Animal Removal Services",
+       "heroSubtitle": "Safe and Hygienic Removal in Melbourne",
+       "heroDescription": "Safe and hygienic removal of deceased animals from your property with proper disposal and cleanup.",
+       "heroImage": "/RC-3.png",
+       "overview": {
+         "title": "Professional Dead Animal Removal Services",
+         "subtitle": "Safe and Hygienic Removal",
+         "description": "Professional dead animal removal services with proper handling, disposal, and cleanup to ensure safety and hygiene.",
+         "features": [
+           "Safe and hygienic removal",
+           "Proper disposal methods",
+           "Complete cleanup and sanitization",
+           "Emergency removal services",
+           "Professional handling equipment"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Dead Animals on Property",
+         "description": "Dead animals can pose serious health and safety risks:",
+         "risks": [
+           {
+             "title": "Health Hazards",
+             "description": "Dead animals can carry diseases and attract other pests and scavengers."
+           },
+           {
+             "title": "Odor Issues",
+             "description": "Decomposing animals create unpleasant odors that can permeate buildings."
+           },
+           {
+             "title": "Contamination",
+             "description": "Bodily fluids can contaminate soil, water, and building materials."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Dead Animal Removal Services",
+         "benefits": [
+           {
+             "title": "Professional Handling",
+             "description": "Our team uses proper equipment and techniques for safe removal."
+           },
+           {
+             "title": "Complete Cleanup",
+             "description": "We provide thorough cleanup and sanitization after removal."
+           },
+           {
+             "title": "Safe Disposal",
+             "description": "We ensure proper disposal in accordance with health regulations."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Dead Animal Removal Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Assessment",
+             "description": "Evaluate the situation and determine the safest removal approach."
+           },
+           {
+             "step": "2",
+             "title": "Safe Removal",
+             "description": "Use proper equipment to safely remove the deceased animal."
+           },
+           {
+             "step": "3",
+             "title": "Cleanup",
+             "description": "Thoroughly clean and sanitize the affected area."
+           },
+           {
+             "step": "4",
+             "title": "Proper Disposal",
+             "description": "Dispose of remains in accordance with health regulations."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "How quickly can you remove a dead animal?",
+           "answer": "We offer same-day and emergency removal services for urgent situations."
+         },
+         {
+           "question": "Do you clean up after removal?",
+           "answer": "Yes, we provide complete cleanup and sanitization of the affected area."
+         },
+         {
+           "question": "Is dead animal removal safe?",
+           "answer": "Yes, we use proper protective equipment and safe handling methods."
+         }
+       ],
+       "cta": {
+         "title": "Need Dead Animal Removal?",
+         "description": "Contact us for safe, hygienic dead animal removal services.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "general-pest-control": {
+       "title": "General Pest Control",
+       "heroTitle": "Professional General Pest Control Services",
+       "heroSubtitle": "Comprehensive Pest Management in Melbourne",
+       "heroDescription": "Comprehensive pest control solutions for all types of pest infestations with guaranteed results and long-term protection.",
+       "heroImage": "/RC-4.png",
+       "overview": {
+         "title": "Professional General Pest Control Services",
+         "subtitle": "Comprehensive Pest Management",
+         "description": "Complete pest control solutions for residential and commercial properties, targeting all types of pests with safe and effective treatments.",
+         "features": [
+           "Comprehensive pest treatment",
+           "Safe and effective methods",
+           "Long-term protection",
+           "Emergency services available",
+           "Guaranteed results"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Pest Infestations",
+         "description": "Pest infestations can cause serious health and property issues:",
+         "risks": [
+           {
+             "title": "Health Risks",
+             "description": "Pests can carry diseases and cause allergic reactions in humans and pets."
+           },
+           {
+             "title": "Property Damage",
+             "description": "Pests can damage structures, furniture, and electrical systems."
+           },
+           {
+             "title": "Food Contamination",
+             "description": "Pests can contaminate food supplies and preparation areas."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our General Pest Control Services",
+         "benefits": [
+           {
+             "title": "Comprehensive Treatment",
+             "description": "We target all types of pests with effective treatment methods."
+           },
+           {
+             "title": "Safe Methods",
+             "description": "Our treatments are safe for families, pets, and the environment."
+           },
+           {
+             "title": "Long-term Protection",
+             "description": "We provide ongoing protection to prevent future infestations."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our General Pest Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Inspection",
+             "description": "Thorough property inspection to identify pest types and infestation levels."
+           },
+           {
+             "step": "2",
+             "title": "Treatment Plan",
+             "description": "Develop comprehensive treatment strategy for all identified pests."
+           },
+           {
+             "step": "3",
+             "title": "Safe Treatment",
+             "description": "Apply safe and effective treatments to eliminate all pests."
+           },
+           {
+             "step": "4",
+             "title": "Prevention",
+             "description": "Implement prevention measures to protect against future infestations."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "What pests do you treat?",
+           "answer": "We treat all common household and commercial pests including rodents, insects, and wildlife."
+         },
+         {
+           "question": "How long does treatment take?",
+           "answer": "Treatment time varies by property size and infestation level, typically 2-4 hours."
+         },
+         {
+           "question": "Are your treatments safe?",
+           "answer": "Yes, we use safe, approved treatments that are effective against pests but safe for humans and pets."
+         }
+       ],
+       "cta": {
+         "title": "Need General Pest Control?",
+         "description": "Contact us for comprehensive pest control solutions.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "flea-control-treatment": {
+       "title": "Flea Control Treatment",
+       "heroTitle": "Professional Flea Control Treatment",
+       "heroSubtitle": "Effective Flea Elimination in Melbourne",
+       "heroDescription": "Effective flea elimination and prevention for homes and pets with safe, long-lasting treatments.",
+       "heroImage": "/RC-5.png",
+       "overview": {
+         "title": "Professional Flea Control Treatment",
+         "subtitle": "Effective Flea Elimination",
+         "description": "Comprehensive flea control and prevention services that eliminate fleas from your home and protect your pets and family.",
+         "features": [
+           "Complete flea elimination",
+           "Pet-safe treatments",
+           "Long-lasting protection",
+           "Home and yard treatment",
+           "Follow-up services"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Flea Infestations",
+         "description": "Flea infestations can cause serious health and comfort issues:",
+         "risks": [
+           {
+             "title": "Health Risks",
+             "description": "Fleas can transmit diseases and cause allergic reactions in humans and pets."
+           },
+           {
+             "title": "Pet Discomfort",
+             "description": "Fleas cause itching, scratching, and can lead to skin infections in pets."
+           },
+           {
+             "title": "Home Contamination",
+             "description": "Fleas can infest carpets, furniture, and bedding throughout the home."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Flea Control Services",
+         "benefits": [
+           {
+             "title": "Pet-Safe Treatment",
+             "description": "Our treatments are specifically designed to be safe for pets and families."
+           },
+           {
+             "title": "Complete Elimination",
+             "description": "We treat all areas where fleas can hide and breed."
+           },
+           {
+             "title": "Long-lasting Protection",
+             "description": "Our treatments provide extended protection against future infestations."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Flea Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Assessment",
+             "description": "Evaluate flea infestation level and identify breeding areas."
+           },
+           {
+             "step": "2",
+             "title": "Pet Treatment",
+             "description": "Provide safe flea treatment for pets if needed."
+           },
+           {
+             "step": "3",
+             "title": "Home Treatment",
+             "description": "Apply comprehensive treatment to all affected areas."
+           },
+           {
+             "step": "4",
+             "title": "Prevention",
+             "description": "Implement prevention measures and provide maintenance advice."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Are your flea treatments safe for pets?",
+           "answer": "Yes, we use pet-safe treatments that effectively eliminate fleas without harming pets."
+         },
+         {
+           "question": "How long does flea treatment take?",
+           "answer": "Treatment typically takes 2-3 hours, with follow-up visits to ensure complete elimination."
+         },
+         {
+           "question": "Do you treat the yard as well?",
+           "answer": "Yes, we provide comprehensive treatment including outdoor areas where fleas can breed."
+         }
+       ],
+       "cta": {
+         "title": "Need Flea Control?",
+         "description": "Contact us for effective flea elimination and prevention.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "spider-control-treatment": {
+       "title": "Spider Control Treatment",
+       "heroTitle": "Professional Spider Control Treatment",
+       "heroSubtitle": "Comprehensive Spider Elimination in Melbourne",
+       "heroDescription": "Comprehensive spider treatment and prevention to keep your home spider-free with safe and effective methods.",
+       "heroImage": "/RC-6.png",
+       "overview": {
+         "title": "Professional Spider Control Treatment",
+         "subtitle": "Comprehensive Spider Elimination",
+         "description": "Effective spider control and prevention services that eliminate spiders from your home and prevent future infestations.",
+         "features": [
+           "Complete spider elimination",
+           "Safe treatment methods",
+           "Prevention strategies",
+           "Indoor and outdoor treatment",
+           "Long-lasting protection"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Spider Infestations",
+         "description": "Spider infestations can pose various risks:",
+         "risks": [
+           {
+             "title": "Venomous Bites",
+             "description": "Some spider species can deliver painful or dangerous bites."
+           },
+           {
+             "title": "Web Contamination",
+             "description": "Spider webs can accumulate dust and create unsightly messes."
+           },
+           {
+             "title": "Fear and Anxiety",
+             "description": "Spider presence can cause fear and anxiety for many people."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Spider Control Services",
+         "benefits": [
+           {
+             "title": "Safe Treatment",
+             "description": "Our treatments are safe for families and pets while being effective against spiders."
+           },
+           {
+             "title": "Complete Elimination",
+             "description": "We target all spider species and their hiding places."
+           },
+           {
+             "title": "Prevention Focus",
+             "description": "We implement prevention measures to keep spiders away long-term."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Spider Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Inspection",
+             "description": "Identify spider species and locate nesting areas."
+           },
+           {
+             "step": "2",
+             "title": "Treatment",
+             "description": "Apply safe, effective treatments to eliminate spiders."
+           },
+           {
+             "step": "3",
+             "title": "Cleanup",
+             "description": "Remove webs and spider debris from treated areas."
+           },
+           {
+             "step": "4",
+             "title": "Prevention",
+             "description": "Implement barriers and deterrents to prevent return."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you treat all spider species?",
+           "answer": "Yes, we treat all common spider species found in Melbourne homes and businesses."
+         },
+         {
+           "question": "Are your treatments safe for pets?",
+           "answer": "Yes, our spider control treatments are safe for pets and families."
+         },
+         {
+           "question": "How long does spider treatment last?",
+           "answer": "Our treatments provide long-lasting protection with follow-up services available."
+         }
+       ],
+       "cta": {
+         "title": "Need Spider Control?",
+         "description": "Contact us for effective spider elimination and prevention.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "bedbugs-control": {
+       "title": "Bedbugs Control",
+       "heroTitle": "Professional Bedbugs Control Services",
+       "heroSubtitle": "Effective Bedbug Elimination in Melbourne",
+       "heroDescription": "Effective bedbug elimination with heat treatment and chemical solutions for complete eradication.",
+       "heroImage": "/RC-1.png",
+       "overview": {
+         "title": "Professional Bedbugs Control Services",
+         "subtitle": "Effective Bedbug Elimination",
+         "description": "Comprehensive bedbug control using advanced heat treatment and chemical solutions for complete elimination.",
+         "features": [
+           "Heat treatment technology",
+           "Chemical solutions",
+           "Complete eradication",
+           "Follow-up services",
+           "Guaranteed results"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Bedbug Infestations",
+         "description": "Bedbug infestations can cause serious problems:",
+         "risks": [
+           {
+             "title": "Health Issues",
+             "description": "Bedbug bites can cause itching, allergic reactions, and sleep disruption."
+           },
+           {
+             "title": "Property Damage",
+             "description": "Bedbugs can damage furniture, mattresses, and other household items."
+           },
+           {
+             "title": "Psychological Impact",
+             "description": "Bedbug infestations can cause stress, anxiety, and sleep problems."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Bedbug Control Services",
+         "benefits": [
+           {
+             "title": "Advanced Technology",
+             "description": "We use heat treatment technology for effective bedbug elimination."
+           },
+           {
+             "title": "Complete Treatment",
+             "description": "Our comprehensive approach ensures complete bedbug eradication."
+           },
+           {
+             "title": "Guaranteed Results",
+             "description": "We provide guaranteed results with follow-up services included."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Bedbug Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Inspection",
+             "description": "Thorough inspection to identify bedbug infestation areas."
+           },
+           {
+             "step": "2",
+             "title": "Preparation",
+             "description": "Prepare the area for treatment and remove items as needed."
+           },
+           {
+             "step": "3",
+             "title": "Heat Treatment",
+             "description": "Apply heat treatment to eliminate bedbugs and their eggs."
+           },
+           {
+             "step": "4",
+             "title": "Chemical Treatment",
+             "description": "Apply chemical treatments for complete eradication."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "How effective is heat treatment for bedbugs?",
+           "answer": "Heat treatment is highly effective, killing bedbugs and their eggs at all life stages."
+         },
+         {
+           "question": "How long does bedbug treatment take?",
+           "answer": "Treatment typically takes 4-6 hours, depending on the size of the infestation."
+         },
+         {
+           "question": "Do you guarantee bedbug elimination?",
+           "answer": "Yes, we provide guaranteed results with follow-up services if needed."
+         }
+       ],
+       "cta": {
+         "title": "Need Bedbug Control?",
+         "description": "Contact us for effective bedbug elimination with guaranteed results.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "bird-proofing": {
+       "title": "Bird Proofing",
+       "heroTitle": "Professional Bird Proofing Services",
+       "heroSubtitle": "Protect Your Property from Bird Damage in Melbourne",
+       "heroDescription": "Professional bird proofing solutions to protect your property from bird damage with humane and effective methods.",
+       "heroImage": "/RC-2.png",
+       "overview": {
+         "title": "Professional Bird Proofing Services",
+         "subtitle": "Protect Your Property from Bird Damage",
+         "description": "Comprehensive bird proofing solutions that protect your property from bird damage while using humane and effective deterrent methods.",
+         "features": [
+           "Humane bird deterrents",
+           "Professional installation",
+           "Long-lasting protection",
+           "Property damage prevention",
+           "Maintenance services"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Bird Infestations",
+         "description": "Birds can cause significant damage to properties:",
+         "risks": [
+           {
+             "title": "Property Damage",
+             "description": "Bird droppings can damage roofs, gutters, and building materials."
+           },
+           {
+             "title": "Health Risks",
+             "description": "Bird droppings can carry diseases and parasites harmful to humans."
+           },
+           {
+             "title": "Structural Issues",
+             "description": "Nesting materials can block gutters and cause water damage."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Bird Proofing Services",
+         "benefits": [
+           {
+             "title": "Humane Methods",
+             "description": "We use humane deterrents that don't harm birds but effectively keep them away."
+           },
+           {
+             "title": "Professional Installation",
+             "description": "Our team ensures proper installation for maximum effectiveness."
+           },
+           {
+             "title": "Long-term Protection",
+             "description": "Our solutions provide lasting protection against bird damage."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Bird Proofing Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Assessment",
+             "description": "Evaluate the property to identify bird activity and vulnerable areas."
+           },
+           {
+             "step": "2",
+             "title": "Solution Design",
+             "description": "Design appropriate bird proofing solutions for your specific situation."
+           },
+           {
+             "step": "3",
+             "title": "Installation",
+             "description": "Install humane bird deterrents and protective measures."
+           },
+           {
+             "step": "4",
+             "title": "Maintenance",
+             "description": "Provide ongoing maintenance and monitoring services."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Are your bird proofing methods humane?",
+           "answer": "Yes, we use humane deterrents that don't harm birds but effectively keep them away."
+         },
+         {
+           "question": "How long does bird proofing last?",
+           "answer": "Our solutions provide long-term protection with regular maintenance."
+         },
+         {
+           "question": "Do you offer maintenance services?",
+           "answer": "Yes, we provide ongoing maintenance to ensure continued effectiveness."
+         }
+       ],
+       "cta": {
+         "title": "Need Bird Proofing?",
+         "description": "Contact us for professional bird proofing solutions.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "ants-control-treatment": {
+       "title": "Ants Control Treatment",
+       "heroTitle": "Professional Ants Control Treatment",
+       "heroSubtitle": "Complete Ant Elimination in Melbourne",
+       "heroDescription": "Complete ant control and prevention for all ant species with safe and effective treatment methods.",
+       "heroImage": "/RC-3.png",
+       "overview": {
+         "title": "Professional Ants Control Treatment",
+         "subtitle": "Complete Ant Elimination",
+         "description": "Comprehensive ant control services that eliminate all ant species from your property and prevent future infestations.",
+         "features": [
+           "All ant species treatment",
+           "Safe and effective methods",
+           "Complete elimination",
+           "Prevention strategies",
+           "Follow-up services"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Ant Infestations",
+         "description": "Ant infestations can cause various problems:",
+         "risks": [
+           {
+             "title": "Food Contamination",
+             "description": "Ants can contaminate food supplies and preparation areas."
+           },
+           {
+             "title": "Property Damage",
+             "description": "Some ant species can damage wood and electrical systems."
+           },
+           {
+             "title": "Health Risks",
+             "description": "Ant bites can cause allergic reactions and discomfort."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Ant Control Services",
+         "benefits": [
+           {
+             "title": "Complete Treatment",
+             "description": "We target all ant species and their colonies for complete elimination."
+           },
+           {
+             "title": "Safe Methods",
+             "description": "Our treatments are safe for families and pets while being highly effective."
+           },
+           {
+             "title": "Prevention Focus",
+             "description": "We implement prevention measures to keep ants away long-term."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Ant Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Identification",
+             "description": "Identify ant species and locate their colonies and entry points."
+           },
+           {
+             "step": "2",
+             "title": "Treatment",
+             "description": "Apply targeted treatments to eliminate ants and their colonies."
+           },
+           {
+             "step": "3",
+             "title": "Prevention",
+             "description": "Implement barriers and deterrents to prevent future infestations."
+           },
+           {
+             "step": "4",
+             "title": "Follow-up",
+             "description": "Return for inspection and additional treatment if needed."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you treat all ant species?",
+           "answer": "Yes, we treat all common ant species found in Melbourne properties."
+         },
+         {
+           "question": "How long does ant treatment take?",
+           "answer": "Treatment typically takes 2-3 hours with follow-up visits as needed."
+         },
+         {
+           "question": "Are your treatments safe for pets?",
+           "answer": "Yes, our ant control treatments are safe for pets and families."
+         }
+       ],
+       "cta": {
+         "title": "Need Ant Control?",
+         "description": "Contact us for complete ant elimination and prevention.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "wasp-nest-removal": {
+       "title": "Wasp Nest Removal",
+       "heroTitle": "Professional Wasp Nest Removal Services",
+       "heroSubtitle": "Safe Wasp Nest Removal in Melbourne",
+       "heroDescription": "Safe and professional wasp nest removal with protective equipment and techniques for complete elimination.",
+       "heroImage": "/RC-2.png",
+       "overview": {
+         "title": "Professional Wasp Nest Removal Services",
+         "subtitle": "Safe Wasp Nest Removal",
+         "description": "Professional wasp nest removal services using protective equipment and safe techniques to eliminate wasp threats completely.",
+         "features": [
+           "Professional equipment",
+           "Safe removal methods",
+           "Complete elimination",
+           "Emergency services",
+           "Protective gear"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Wasp Nests",
+         "description": "Wasp nests pose serious risks:",
+         "risks": [
+           {
+             "title": "Sting Hazards",
+             "description": "Wasp stings can be painful and dangerous, especially for allergic individuals."
+           },
+           {
+             "title": "Aggressive Behavior",
+             "description": "Wasps can become aggressive when their nest is threatened."
+           },
+           {
+             "title": "Property Access",
+             "description": "Wasp nests can make areas of your property inaccessible and unsafe."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Wasp Nest Removal Services",
+         "benefits": [
+           {
+             "title": "Professional Equipment",
+             "description": "We use professional equipment and protective gear for safe removal."
+           },
+           {
+             "title": "Safe Methods",
+             "description": "Our removal methods prioritize safety for everyone involved."
+           },
+           {
+             "title": "Complete Elimination",
+             "description": "We ensure complete removal of wasps and their nests."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Wasp Nest Removal Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Safety Assessment",
+             "description": "Evaluate the situation and determine the safest removal approach."
+           },
+           {
+             "step": "2",
+             "title": "Protective Setup",
+             "description": "Set up safety barriers and protective equipment."
+           },
+           {
+             "step": "3",
+             "title": "Safe Removal",
+             "description": "Remove the wasp nest using professional equipment and techniques."
+           },
+           {
+             "step": "4",
+             "title": "Cleanup",
+             "description": "Clean the area and remove any remaining wasp activity."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Is wasp nest removal dangerous?",
+           "answer": "We use professional equipment and safety measures to minimize risks."
+         },
+         {
+           "question": "How quickly can you remove a wasp nest?",
+           "answer": "We offer same-day and emergency wasp nest removal services."
+         },
+         {
+           "question": "Do you guarantee complete removal?",
+           "answer": "Yes, we ensure complete removal of wasps and their nests."
+         }
+       ],
+       "cta": {
+         "title": "Need Wasp Nest Removal?",
+         "description": "Contact us for safe and professional wasp nest removal.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "mosquitoes-control-treatment": {
+       "title": "Mosquitoes Control Treatment",
+       "heroTitle": "Professional Mosquitoes Control Treatment",
+       "heroSubtitle": "Effective Mosquito Control in Melbourne",
+       "heroDescription": "Effective mosquito control and prevention for outdoor and indoor areas with safe and long-lasting treatments.",
+       "heroImage": "/RC-4.png",
+       "overview": {
+         "title": "Professional Mosquitoes Control Treatment",
+         "subtitle": "Effective Mosquito Control",
+         "description": "Comprehensive mosquito control services that eliminate mosquitoes from your property and provide long-term protection.",
+         "features": [
+           "Indoor and outdoor treatment",
+           "Long-lasting protection",
+           "Safe for families",
+           "Prevention strategies",
+           "Regular maintenance"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Mosquito Infestations",
+         "description": "Mosquitoes pose serious health risks:",
+         "risks": [
+           {
+             "title": "Disease Transmission",
+             "description": "Mosquitoes can transmit diseases like Ross River virus and Barmah Forest virus."
+           },
+           {
+             "title": "Discomfort",
+             "description": "Mosquito bites cause itching, swelling, and can disrupt outdoor activities."
+           },
+           {
+             "title": "Health Risks",
+             "description": "Severe allergic reactions to mosquito bites can occur in some individuals."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Mosquito Control Services",
+         "benefits": [
+           {
+             "title": "Comprehensive Treatment",
+             "description": "We treat both indoor and outdoor areas for complete mosquito control."
+           },
+           {
+             "title": "Long-lasting Protection",
+             "description": "Our treatments provide extended protection against mosquitoes."
+           },
+           {
+             "title": "Safe Methods",
+             "description": "Our treatments are safe for families and pets."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Mosquito Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Assessment",
+             "description": "Identify mosquito breeding areas and activity levels."
+           },
+           {
+             "step": "2",
+             "title": "Treatment",
+             "description": "Apply comprehensive treatment to eliminate mosquitoes."
+           },
+           {
+             "step": "3",
+             "title": "Prevention",
+             "description": "Implement prevention measures to reduce breeding sites."
+           },
+           {
+             "step": "4",
+             "title": "Maintenance",
+             "description": "Provide regular maintenance for ongoing protection."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you treat both indoor and outdoor areas?",
+           "answer": "Yes, we provide comprehensive treatment for both indoor and outdoor areas."
+         },
+         {
+           "question": "How long does mosquito treatment last?",
+           "answer": "Our treatments provide long-lasting protection with regular maintenance."
+         },
+         {
+           "question": "Are your treatments safe for children?",
+           "answer": "Yes, our mosquito control treatments are safe for children and families."
+         }
+       ],
+       "cta": {
+         "title": "Need Mosquito Control?",
+         "description": "Contact us for effective mosquito control and prevention.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "commercial-pest-control": {
+       "title": "Commercial Pest Control",
+       "heroTitle": "Professional Commercial Pest Control Services",
+       "heroSubtitle": "Comprehensive Pest Management for Businesses in Melbourne",
+       "heroDescription": "Comprehensive pest management solutions for businesses and commercial properties with guaranteed results and compliance.",
+       "heroImage": "/RC-5.png",
+       "overview": {
+         "title": "Professional Commercial Pest Control Services",
+         "subtitle": "Comprehensive Pest Management for Businesses",
+         "description": "Complete pest management solutions designed specifically for commercial properties, ensuring compliance and protecting your business reputation.",
+         "features": [
+           "Commercial compliance",
+           "Comprehensive treatment",
+           "Documentation provided",
+           "Flexible scheduling",
+           "Guaranteed results"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Pest Infestations in Commercial Properties",
+         "description": "Pest infestations in commercial properties can have serious consequences:",
+         "risks": [
+           {
+             "title": "Health Code Violations",
+             "description": "Pest infestations can lead to health code violations and business closure."
+           },
+           {
+             "title": "Reputation Damage",
+             "description": "Pest sightings can damage your business reputation and customer trust."
+           },
+           {
+             "title": "Financial Loss",
+             "description": "Pest damage can result in costly repairs and lost business."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Commercial Pest Control Services",
+         "benefits": [
+           {
+             "title": "Commercial Expertise",
+             "description": "We specialize in commercial pest control with industry-specific knowledge."
+           },
+           {
+             "title": "Compliance Focus",
+             "description": "Our services ensure compliance with health and safety regulations."
+           },
+           {
+             "title": "Flexible Scheduling",
+             "description": "We work around your business hours to minimize disruption."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Commercial Pest Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Business Assessment",
+             "description": "Evaluate your business needs and compliance requirements."
+           },
+           {
+             "step": "2",
+             "title": "Customized Plan",
+             "description": "Develop a pest control plan tailored to your business."
+           },
+           {
+             "step": "3",
+             "title": "Professional Treatment",
+             "description": "Apply comprehensive treatment with minimal business disruption."
+           },
+           {
+             "step": "4",
+             "title": "Documentation",
+             "description": "Provide detailed documentation for compliance and records."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you provide compliance documentation?",
+           "answer": "Yes, we provide detailed documentation for health and safety compliance."
+         },
+         {
+           "question": "Can you work around business hours?",
+           "answer": "Yes, we offer flexible scheduling to minimize business disruption."
+         },
+         {
+           "question": "What industries do you serve?",
+           "answer": "We serve all commercial industries including hospitality, retail, and manufacturing."
+         }
+       ],
+       "cta": {
+         "title": "Need Commercial Pest Control?",
+         "description": "Contact us for comprehensive commercial pest management solutions.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "residential-pest-control": {
+       "title": "Residential Pest Control",
+       "heroTitle": "Professional Residential Pest Control Services",
+       "heroSubtitle": "Complete Pest Control for Homes in Melbourne",
+       "heroDescription": "Complete pest control solutions designed specifically for residential properties with safe and effective treatments.",
+       "heroImage": "/RC-6.png",
+       "overview": {
+         "title": "Professional Residential Pest Control Services",
+         "subtitle": "Complete Pest Control for Homes",
+         "description": "Comprehensive pest control solutions designed specifically for residential properties, ensuring your home remains pest-free and safe for your family.",
+         "features": [
+           "Family-safe treatments",
+           "Complete home protection",
+           "Regular maintenance",
+           "Emergency services",
+           "Guaranteed results"
+         ]
+       },
+       "dangers": {
+         "title": "Dangers of Pest Infestations in Homes",
+         "description": "Pest infestations in homes can cause various problems:",
+         "risks": [
+           {
+             "title": "Health Risks",
+             "description": "Pests can carry diseases and cause allergic reactions in family members."
+           },
+           {
+             "title": "Property Damage",
+             "description": "Pests can damage furniture, structures, and personal belongings."
+           },
+           {
+             "title": "Comfort Issues",
+             "description": "Pest presence can make your home uncomfortable and stressful."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our Residential Pest Control Services",
+         "benefits": [
+           {
+             "title": "Family Safety",
+             "description": "Our treatments are specifically designed to be safe for families and pets."
+           },
+           {
+             "title": "Complete Protection",
+             "description": "We provide comprehensive protection for your entire home."
+           },
+           {
+             "title": "Regular Maintenance",
+             "description": "We offer ongoing maintenance to keep your home pest-free."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our Residential Pest Control Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Home Inspection",
+             "description": "Thorough inspection of your home to identify pest issues."
+           },
+           {
+             "step": "2",
+             "title": "Family Consultation",
+             "description": "Discuss treatment options and safety measures for your family."
+           },
+           {
+             "step": "3",
+             "title": "Safe Treatment",
+             "description": "Apply safe, effective treatments throughout your home."
+           },
+           {
+             "step": "4",
+             "title": "Ongoing Protection",
+             "description": "Provide regular maintenance and prevention services."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Are your treatments safe for children and pets?",
+           "answer": "Yes, our residential treatments are specifically designed to be safe for families."
+         },
+         {
+           "question": "How often should I schedule pest control?",
+           "answer": "We recommend regular maintenance visits to keep your home pest-free."
+         },
+         {
+           "question": "Do you offer emergency services?",
+           "answer": "Yes, we provide emergency pest control services for urgent situations."
+         }
+       ],
+       "cta": {
+         "title": "Need Residential Pest Control?",
+         "description": "Contact us for complete home pest control solutions.",
+         "buttonText": "Get Free Quote"
+       }
+     },
+     "end-of-lease-spray": {
+       "title": "End of Lease Spray",
+       "heroTitle": "Professional End of Lease Spray Services",
+       "heroSubtitle": "Meet Rental Requirements in Melbourne",
+       "heroDescription": "Professional end of lease pest control treatment to meet rental requirements and ensure your bond is returned.",
+       "heroImage": "/RC-2.png",
+       "overview": {
+         "title": "Professional End of Lease Spray Services",
+         "subtitle": "Meet Rental Requirements",
+         "description": "Professional end of lease pest control treatment that meets rental requirements and ensures your bond is returned without issues.",
+         "features": [
+           "Rental compliance",
+           "Bond protection",
+           "Professional treatment",
+           "Documentation provided",
+           "Guaranteed results"
+         ]
+       },
+       "dangers": {
+         "title": "Risks of Not Getting End of Lease Spray",
+         "description": "Failing to get end of lease spray can have consequences:",
+         "risks": [
+           {
+             "title": "Bond Loss",
+             "description": "Landlords may withhold your bond if pest control is not completed."
+           },
+           {
+             "title": "Legal Issues",
+             "description": "Failure to meet lease requirements can lead to legal complications."
+           },
+           {
+             "title": "Future Rental Problems",
+             "description": "Poor rental history can affect future rental applications."
+           }
+         ]
+       },
+       "whyChooseUs": {
+         "title": "Why Choose Our End of Lease Spray Services",
+         "benefits": [
+           {
+             "title": "Rental Compliance",
+             "description": "Our treatments meet all rental property requirements."
+           },
+           {
+             "title": "Bond Protection",
+             "description": "We help ensure your bond is returned without issues."
+           },
+           {
+             "title": "Professional Service",
+             "description": "We provide professional treatment with proper documentation."
+           }
+         ]
+       },
+       "process": {
+         "title": "Our End of Lease Spray Process",
+         "steps": [
+           {
+             "step": "1",
+             "title": "Requirement Review",
+             "description": "Review your lease requirements and rental property needs."
+           },
+           {
+             "step": "2",
+             "title": "Professional Treatment",
+             "description": "Apply comprehensive pest control treatment to the property."
+           },
+           {
+             "step": "3",
+             "title": "Documentation",
+             "description": "Provide detailed documentation for your landlord or agent."
+           },
+           {
+             "step": "4",
+             "title": "Bond Protection",
+             "description": "Ensure your bond return process goes smoothly."
+           }
+         ]
+       },
+       "faqs": [
+         {
+           "question": "Do you provide documentation for landlords?",
+           "answer": "Yes, we provide detailed documentation for your landlord or property manager."
+         },
+         {
+           "question": "How quickly can you complete end of lease spray?",
+           "answer": "We can typically complete treatment within 24-48 hours of booking."
+         },
+         {
+           "question": "Does this guarantee my bond return?",
+           "answer": "Our treatment meets standard rental requirements, helping protect your bond."
+         }
+       ],
+       "cta": {
+         "title": "Need End of Lease Spray?",
+         "description": "Contact us for professional end of lease pest control treatment.",
+         "buttonText": "Get Free Quote"
+       }
+     }
+   }
 }
