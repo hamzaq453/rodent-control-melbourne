@@ -126,12 +126,26 @@ const QuoteSection = () => {
                   className="w-full px-4 py-3 bg-white text-gray-500 rounded-lg border-0 focus:ring-2 focus:ring-[#FFA500] focus:outline-none transition-all duration-200"
                 >
                   <option value="" className='text-black'>Select a service</option>
-                  <option value="rodent-control" className='text-black'>Rodent Control</option>
                   <option value="possum-removal" className='text-black'>Possum Removal</option>
-                  <option value="spider-control" className='text-black'>Spider Control</option>
-                  <option value="ant-control" className='text-black'>Ant Control</option>
-                  <option value="bedbug-control" className='text-black'>Bedbug Control</option>
+                  <option value="possum-catcher" className='text-black'>Possum Catcher</option>
+                  <option value="dead-animal-removal" className='text-black'>Dead Animal Removal</option>
                   <option value="general-pest-control" className='text-black'>General Pest Control</option>
+                  <option value="flea-control-treatment" className='text-black'>Flea Control Treatment</option>
+                  <option value="spider-control-treatment" className='text-black'>Spider Control Treatment</option>
+                  <option value="bedbugs-control" className='text-black'>Bedbugs Control</option>
+                  <option value="bird-proofing" className='text-black'>Bird Proofing</option>
+                  <option value="ants-control-treatment" className='text-black'>Ants Control Treatment</option>
+                  <option value="bird-nest-removal" className='text-black'>Bird Nest Removal</option>
+                  <option value="rodent-control" className='text-black'>Rodent Control</option>
+                  <option value="mice-control-treatment" className='text-black'>Mice Control Treatment</option>
+                  <option value="rats-control-treatment" className='text-black'>Rats Control Treatment</option>
+                  <option value="wasp-nest-removal" className='text-black'>Wasp Nest Removal</option>
+                  <option value="bees-removal" className='text-black'>Bees Removal</option>
+                  <option value="mosquitoes-control-treatment" className='text-black'>Mosquitoes Control Treatment</option>
+                  <option value="commercial-pest-control" className='text-black'>Commercial Pest Control</option>
+                  <option value="residential-pest-control" className='text-black'>Residential Pest Control</option>
+                  <option value="bugs-control-treatment" className='text-black'>Bugs Control Treatment</option>
+                  <option value="end-of-lease-spray" className='text-black'>End of Lease Spray</option>
                   <option value="emergency-service" className='text-black'>Emergency Service</option>
                   <option value="other" className='text-black'>Other</option>
                 </select>
