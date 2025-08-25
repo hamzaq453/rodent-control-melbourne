@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import QuoteSection from "./components/QuoteSection";
+import ConditionalQuoteSection from "./components/ConditionalQuoteSection";
 import Footer from "./components/Footer";
 import TopHeader from "./components/TopHeader";
 import Navbar from "./components/Navbar";
+import FloatingCallButton from "./components/FloatingCallButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +35,9 @@ export default function RootLayout({
         <TopHeader />
         <Navbar />
         {children}
-        <QuoteSection />
+        <ConditionalQuoteSection />
         <Footer />
+        <FloatingCallButton />
       </body>
     </html>
   );

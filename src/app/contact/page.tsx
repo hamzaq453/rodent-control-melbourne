@@ -70,7 +70,7 @@ const ContactPage = () => {
                   href="tel:0466660066" 
                   className="text-lg font-bold text-[#3687C9] hover:text-[#2C6EA5] transition-colors duration-200"
                 >
-                  0466 660 066
+                  0451 003300
                 </a>
               </div>
 
@@ -184,9 +184,9 @@ const ContactPage = () => {
                       <select
                         id="service"
                         name="service"
-                        className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
+                        className="w-full px-4 py-3 border text-gray-700 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                       >
-                        <option value="">Select a service</option>
+                        <option value="" className='text-gray-700'>Select a service</option>
                         <option value="rodent-control">Rodent Control</option>
                         <option value="possum-removal">Possum Removal</option>
                         <option value="spider-control">Spider Control</option>
