@@ -8,6 +8,7 @@ const ServicesSection = () => {
     {
       id: 1,
       title: "Rodent Control",
+      slug: "rodent-control",
       description: "Professional mouse and rat elimination with guaranteed results and 6-month warranty protection.",
       image: "/RC-1.png",
       icon: (
@@ -19,6 +20,7 @@ const ServicesSection = () => {
     {
       id: 2,
       title: "Possum Removal",
+      slug: "possum-removal",
       description: "Safe and humane possum removal services with relocation to appropriate habitats.",
       image: "/RC-6.png",
       icon: (
@@ -30,6 +32,7 @@ const ServicesSection = () => {
     {
       id: 3,
       title: "Spider Control",
+      slug: "spider-control-treatment",
       description: "Comprehensive spider treatment and prevention to keep your home spider-free.",
       image: "/RC-2.png",
       icon: (
@@ -41,6 +44,7 @@ const ServicesSection = () => {
     {
       id: 4,
       title: "Bedbugs Control",
+      slug: "bedbugs-control",
       description: "Effective bedbug elimination with heat treatment and chemical solutions.",
       image: "/RC-3.png",
       icon: (
@@ -52,8 +56,9 @@ const ServicesSection = () => {
     },
     {
       id: 5,
-      title: "Wasp Nest Removal",
-      description: "Safe and professional wasp nest removal with protective equipment and techniques.",
+      title: "Bees Removal",
+      slug: "bees-removal",
+      description: "Safe and professional bee removal with protective equipment and techniques.",
       image: "/RC-4.png",
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,8 +68,9 @@ const ServicesSection = () => {
     },
     {
       id: 6,
-      title: "Commercial Pest Control",
-      description: "Comprehensive pest management solutions for businesses and commercial properties.",
+      title: "General Pest Control",
+      slug: "general-pest-control",
+      description: "Comprehensive pest management solutions for residential and commercial properties.",
       image: "/RC-5.png",
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +150,7 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#3687C9]/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
                 <div className="p-6 w-full">
                   <Link 
-                    href="/services"
+                    href={`/services/${service.slug}`}
                     className="block w-full bg-white text-[#3687C9] font-semibold py-3 px-4 rounded-lg text-center hover:bg-[#2C6EA5] hover:text-white transition-all duration-300"
                   >
                     Learn More
