@@ -1,18 +1,16 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import servicesData from '@/data/services.json';
 
 interface ServiceDetailPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
-  const { slug } = params;
+const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
+  const { slug } = await params;
   const service = servicesData.services[slug as keyof typeof servicesData.services];
 
   if (!service) {
