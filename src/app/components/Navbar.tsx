@@ -60,7 +60,7 @@ const Navbar = () => {
           {/* Get Quote Button - Right Side */}
           <div className="hidden md:block">
             <Link 
-              href="/quote" 
+              href="/contact" 
               className="bg-[#3687C9] hover:bg-[#2C6EA5] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer"
             >
               Get Quote

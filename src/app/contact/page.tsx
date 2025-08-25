@@ -251,17 +251,17 @@ const ContactPage = () => {
                         name="service"
                         value={formData.service}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border text-gray-700 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
+                        className="w-full px-4 py-3 border text-gray-500 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3687C9] focus:border-transparent transition-colors duration-200"
                       >
-                        <option value="" className='text-gray-700'>Select a service</option>
-                        <option value="rodent-control">Rodent Control</option>
-                        <option value="possum-removal">Possum Removal</option>
-                        <option value="spider-control">Spider Control</option>
-                        <option value="ant-control">Ant Control</option>
-                        <option value="bedbug-control">Bedbug Control</option>
-                        <option value="general-pest-control">General Pest Control</option>
-                        <option value="emergency-service">Emergency Service</option>
-                        <option value="other">Other</option>
+                        <option value="" className='text-black'>Select a service</option>
+                        <option value="rodent-control" className='text-black'>Rodent Control</option>
+                        <option value="possum-removal" className='text-black'>Possum Removal</option>
+                        <option value="spider-control" className='text-black'>Spider Control</option>
+                        <option value="ant-control" className='text-black'>Ant Control</option>
+                        <option value="bedbug-control" className='text-black'>Bedbug Control</option>
+                        <option value="general-pest-control" className='text-black'>General Pest Control</option>
+                        <option value="emergency-service" className='text-black'>Emergency Service</option>
+                        <option value="other" className='text-black'>Other</option>
                       </select>
                     </div>
                   </div>
@@ -311,12 +311,12 @@ const ContactPage = () => {
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
                     </button>
-                    <Link
+                    {/* <Link
                       href="/quote"
                       className="flex-1 bg-[#FFA500] hover:bg-[#FF8C00] text-white px-8 py-3 rounded-lg font-semibold text-center transition-colors duration-200"
                     >
                       Get Free Quote
-                    </Link>
+                    </Link> */}
                   </div>
                 </form>
               </div>
