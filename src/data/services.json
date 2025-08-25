@@ -1,0 +1,358 @@
+{
+  "services": {
+    "possum-removal": {
+      "title": "Possum Removal",
+      "heroTitle": "Professional Possum Removal Services",
+      "heroSubtitle": "Safe and Humane Possum Relocation in Melbourne",
+      "heroDescription": "Expert possum removal and relocation services with proper permits and humane treatment.",
+      "heroImage": "/RC-1.png",
+      "overview": {
+        "title": "Professional Possum Removal Services",
+        "subtitle": "Safe and Humane Possum Relocation",
+        "description": "Possums are protected wildlife in Australia, requiring special permits and humane handling.",
+        "features": [
+          "Licensed and certified specialists",
+          "Humane capture and relocation",
+          "Proper permits and legal compliance",
+          "Property protection during removal",
+          "Follow-up inspection and prevention"
+        ]
+      },
+      "dangers": {
+        "title": "Dangers of Possum Infestations",
+        "description": "While possums are generally harmless, they can cause significant damage:",
+        "risks": [
+          {
+            "title": "Property Damage",
+            "description": "Possums can damage roofs, ceilings, and insulation."
+          },
+          {
+            "title": "Health Risks",
+            "description": "Possum droppings can carry diseases and parasites."
+          },
+          {
+            "title": "Noise Disturbance",
+            "description": "Nocturnal activity can disrupt sleep."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Our Possum Removal Services",
+        "benefits": [
+          {
+            "title": "Licensed Specialists",
+            "description": "Our team holds proper permits and certifications."
+          },
+          {
+            "title": "Humane Treatment",
+            "description": "We use humane capture methods and ensure proper relocation."
+          },
+          {
+            "title": "Legal Compliance",
+            "description": "All removal activities comply with Australian wildlife laws."
+          }
+        ]
+      },
+      "process": {
+        "title": "Our Possum Removal Process",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Initial Assessment",
+            "description": "Thorough inspection to identify entry points and nesting areas."
+          },
+          {
+            "step": "2",
+            "title": "Humane Capture",
+            "description": "Use specialized equipment to safely capture possums."
+          },
+          {
+            "step": "3",
+            "title": "Safe Relocation",
+            "description": "Transport to approved relocation sites."
+          },
+          {
+            "step": "4",
+            "title": "Property Protection",
+            "description": "Seal entry points and install deterrents."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is possum removal legal in Melbourne?",
+          "answer": "Yes, but it requires proper permits and licensed professionals."
+        },
+        {
+          "question": "How long does possum removal take?",
+          "answer": "The process typically takes 2-4 hours depending on complexity."
+        },
+        {
+          "question": "Do you offer emergency possum removal?",
+          "answer": "Yes, we provide emergency removal services for urgent situations."
+        }
+      ],
+      "cta": {
+        "title": "Need Professional Possum Removal?",
+        "description": "Contact us for safe, legal, and humane possum removal services.",
+        "buttonText": "Get Free Quote"
+      }
+    },
+    "rodent-control": {
+      "title": "Rodent Control",
+      "heroTitle": "Professional Rodent Control Services",
+      "heroSubtitle": "Complete Mouse and Rat Elimination in Melbourne",
+      "heroDescription": "Expert rodent control with guaranteed results and 6-month warranty protection. Our comprehensive approach eliminates mice and rats while preventing future infestations.",
+      "heroImage": "/RC-5.png",
+      "overview": {
+        "title": "Professional Rodent Control Services",
+        "subtitle": "Complete Mouse and Rat Elimination",
+        "description": "Rodents pose serious health risks and can cause extensive property damage. Our comprehensive rodent control services eliminate mice and rats while providing long-term prevention solutions.",
+        "features": [
+          "Guaranteed results with 6-month warranty",
+          "Safe and effective treatment methods",
+          "Complete property inspection and treatment",
+          "Prevention strategies for long-term protection",
+          "Emergency and same-day services available"
+        ]
+      },
+      "dangers": {
+        "title": "Dangers of Rodent Infestations",
+        "description": "Rodents are not just a nuisance - they pose serious health and safety risks:",
+        "risks": [
+          {
+            "title": "Health Hazards",
+            "description": "Rodents carry diseases like salmonella, hantavirus, and leptospirosis that can be transmitted to humans."
+          },
+          {
+            "title": "Property Damage",
+            "description": "Mice and rats can damage electrical wiring, insulation, and structural components of buildings."
+          },
+          {
+            "title": "Food Contamination",
+            "description": "Rodents contaminate food supplies and surfaces with their droppings, urine, and hair."
+          },
+          {
+            "title": "Fire Hazards",
+            "description": "Chewed electrical wires can create fire hazards and electrical failures."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Our Rodent Control Services",
+        "benefits": [
+          {
+            "title": "Guaranteed Results",
+            "description": "We offer a 6-month warranty on all rodent control treatments with follow-up services."
+          },
+          {
+            "title": "Comprehensive Approach",
+            "description": "We treat the entire property, not just visible areas, ensuring complete elimination."
+          },
+          {
+            "title": "Safe Treatments",
+            "description": "Our methods are safe for children, pets, and the environment while being highly effective."
+          },
+          {
+            "title": "Expert Technicians",
+            "description": "Our certified technicians have extensive experience in rodent control and prevention."
+          },
+          {
+            "title": "Prevention Focus",
+            "description": "We don't just eliminate current infestations - we prevent future ones with long-term solutions."
+          }
+        ]
+      },
+      "process": {
+        "title": "Our Rodent Control Process",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Thorough Inspection",
+            "description": "Complete property assessment to identify entry points, nesting areas, and infestation extent."
+          },
+          {
+            "step": "2",
+            "title": "Customized Treatment Plan",
+            "description": "Develop targeted treatment strategy based on property layout and rodent species present."
+          },
+          {
+            "step": "3",
+            "title": "Safe Elimination",
+            "description": "Apply professional-grade treatments using safe, effective methods for complete elimination."
+          },
+          {
+            "step": "4",
+            "title": "Entry Point Sealing",
+            "description": "Seal all potential entry points to prevent rodents from re-entering the property."
+          },
+          {
+            "step": "5",
+            "title": "Prevention Measures",
+            "description": "Install deterrents and provide recommendations for ongoing prevention."
+          },
+          {
+            "step": "6",
+            "title": "Follow-up Services",
+            "description": "Return for inspection and additional treatment if needed, covered by our warranty."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "question": "How long does rodent control treatment take?",
+          "answer": "Initial treatment takes 2-3 hours, with follow-up visits scheduled to ensure complete elimination."
+        },
+        {
+          "question": "Are your treatments safe for pets and children?",
+          "answer": "Yes, we use pet and child-safe treatments that are effective against rodents but harmless to humans and pets."
+        },
+        {
+          "question": "What's included in your 6-month warranty?",
+          "answer": "Our warranty covers follow-up treatments if rodents return within 6 months of initial service."
+        },
+        {
+          "question": "How do you prevent rodents from returning?",
+          "answer": "We seal entry points, install deterrents, and provide recommendations for ongoing prevention."
+        },
+        {
+          "question": "Do you offer emergency rodent control?",
+          "answer": "Yes, we provide emergency and same-day rodent control services for urgent situations."
+        }
+      ],
+      "cta": {
+        "title": "Ready to Eliminate Rodents?",
+        "description": "Get guaranteed rodent control with our 6-month warranty protection.",
+        "buttonText": "Get Free Quote"
+      }
+    },
+    "bees-removal": {
+      "title": "Bees Removal",
+      "heroTitle": "Professional Bees Removal Services",
+      "heroSubtitle": "Safe and Humane Bee Relocation in Melbourne",
+      "heroDescription": "Expert bee removal and relocation services by experienced beekeepers. We safely remove bee hives and swarms while preserving these important pollinators.",
+      "heroImage": "/RC-3.png",
+      "overview": {
+        "title": "Professional Bees Removal Services",
+        "subtitle": "Safe and Humane Bee Relocation",
+        "description": "Bees are essential pollinators that should be preserved whenever possible. Our experienced beekeepers provide safe removal and relocation services that protect both your property and the bee population.",
+        "features": [
+          "Experienced beekeeper specialists",
+          "Safe removal and relocation methods",
+          "Protection of bee colonies",
+          "Complete hive removal and cleanup",
+          "Emergency swarm removal services"
+        ]
+      },
+      "dangers": {
+        "title": "Dangers of Bee Infestations",
+        "description": "While bees are beneficial, they can pose risks when nesting in or near your property:",
+        "risks": [
+          {
+            "title": "Sting Hazards",
+            "description": "Bee stings can cause severe allergic reactions and may be life-threatening for some individuals."
+          },
+          {
+            "title": "Structural Damage",
+            "description": "Bee hives in walls or ceilings can cause structural damage and honey can attract other pests."
+          },
+          {
+            "title": "Property Access Issues",
+            "description": "Bees can make areas of your property inaccessible and affect outdoor activities."
+          },
+          {
+            "title": "Honey Damage",
+            "description": "Honey from wall hives can damage building materials and create moisture issues."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Our Bees Removal Services",
+        "benefits": [
+          {
+            "title": "Expert Beekeepers",
+            "description": "Our team includes certified beekeepers with extensive experience in safe bee handling."
+          },
+          {
+            "title": "Humane Relocation",
+            "description": "We prioritize relocating bees to safe locations rather than extermination when possible."
+          },
+          {
+            "title": "Complete Cleanup",
+            "description": "We remove all hive materials and honey to prevent future infestations and property damage."
+          },
+          {
+            "title": "Emergency Response",
+            "description": "Available for urgent bee removal situations, including swarm removal."
+          },
+          {
+            "title": "Safety First",
+            "description": "We use proper protective equipment and techniques to ensure safe removal for everyone."
+          }
+        ]
+      },
+      "process": {
+        "title": "Our Bees Removal Process",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Safety Assessment",
+            "description": "Evaluate the situation and determine the safest approach for removal."
+          },
+          {
+            "step": "2",
+            "title": "Protective Setup",
+            "description": "Set up safety barriers and protective equipment for safe removal operations."
+          },
+          {
+            "step": "3",
+            "title": "Hive Removal",
+            "description": "Carefully remove the hive and bees using specialized equipment and techniques."
+          },
+          {
+            "step": "4",
+            "title": "Bee Relocation",
+            "description": "Relocate bees to appropriate locations where they can continue their important role as pollinators."
+          },
+          {
+            "step": "5",
+            "title": "Complete Cleanup",
+            "description": "Remove all hive materials, honey, and wax to prevent future infestations."
+          },
+          {
+            "step": "6",
+            "title": "Prevention Measures",
+            "description": "Seal entry points and provide recommendations to prevent future bee infestations."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Do you kill the bees during removal?",
+          "answer": "We prioritize relocating bees to safe locations rather than extermination, preserving these important pollinators."
+        },
+        {
+          "question": "How long does bee removal take?",
+          "answer": "Bee removal typically takes 2-4 hours, depending on the size and location of the hive."
+        },
+        {
+          "question": "What should I do if I see a bee swarm?",
+          "answer": "Keep your distance and contact us immediately. Swarms are temporary and can be safely relocated."
+        },
+        {
+          "question": "Are your bee removal services safe?",
+          "answer": "Yes, we use proper protective equipment and techniques to ensure safe removal for everyone involved."
+        },
+        {
+          "question": "Do you offer emergency bee removal?",
+          "answer": "Yes, we provide emergency bee removal services for urgent situations requiring immediate attention."
+        }
+      ],
+      "cta": {
+        "title": "Need Professional Bees Removal?",
+        "description": "Contact us for safe, humane bee removal and relocation services in Melbourne.",
+        "buttonText": "Get Free Quote"
+      }
+    }
+  }
+}
