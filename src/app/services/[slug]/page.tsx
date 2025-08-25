@@ -141,7 +141,7 @@ const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20">
+      <section className="py-28 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4">
@@ -151,7 +151,7 @@ const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {service.whyChooseUs.benefits.map((benefit, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-[#2C6EA5] hover:border-[#FFA500]">
                 <div className="w-16 h-16 bg-[#FFA500] rounded-full flex items-center justify-center mb-6 mx-auto">
                   <span className="text-2xl font-bold text-white">{index + 1}</span>
                 </div>
@@ -167,39 +167,59 @@ const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4">
-              {service.process.title}
-            </h2>
-          </div>
+             {/* Process Section */}
+       <section className="py-20 bg-gradient-to-br from-[#2C6EA5] to-[#1e4a75] relative overflow-hidden">
+         {/* Background dots */}
+         <div className="absolute inset-0 opacity-10">
+           <div className="absolute top-10 left-10 w-2 h-2 bg-[#9AC3E4] rounded-full"></div>
+           <div className="absolute top-20 right-20 w-1 h-1 bg-[#9AC3E4] rounded-full"></div>
+           <div className="absolute top-40 left-1/4 w-1.5 h-1.5 bg-[#9AC3E4] rounded-full"></div>
+           <div className="absolute top-60 right-1/3 w-1 h-1 bg-[#9AC3E4] rounded-full"></div>
+           <div className="absolute top-80 left-1/3 w-2 h-2 bg-[#9AC3E4] rounded-full"></div>
+           <div className="absolute top-96 right-1/4 w-1.5 h-1.5 bg-[#9AC3E4] rounded-full"></div>
+         </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {service.process.steps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="bg-gradient-to-br from-[#2C6EA5] to-[#1e4a75] p-8 rounded-xl text-white text-center">
-                  <div className="w-16 h-16 bg-[#FFA500] rounded-full flex items-center justify-center mb-6 mx-auto text-2xl font-bold">
-                    {step.step}
-                  </div>
-                  <h3 className="text-xl font-bold mb-4">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-100">
-                    {step.description}
-                  </p>
-                </div>
-                
-                {/* Connector line */}
-                {index < service.process.steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-[#FFA500] transform -translate-y-1/2"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+           <div className="text-center mb-16">
+             <h2 className="text-3xl lg:text-4xl font-bold text-[#fefefe] mb-4">
+               {service.process.title}
+             </h2>
+           </div>
+
+           <div className="max-w-6xl mx-auto relative">
+             {/* Central timeline */}
+             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#9AC3E4] transform -translate-x-1/2"></div>
+             
+             <div className="space-y-16">
+               {service.process.steps.map((step, index) => (
+                 <div key={index} className="relative">
+                   {/* Timeline node */}
+                   <div className="absolute left-1/2 top-8 w-4 h-4 bg-[#FFA500] rounded-full transform -translate-x-1/2 z-10"></div>
+                   
+                   {/* Card */}
+                   <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                     <div className={`w-6/12 ${index % 2 === 0 ? 'pr-5' : 'pl-5'}`}>
+                       <div className="bg-gray-800 p-6 rounded-xl text-white shadow-lg">
+                         <div className="flex items-center space-x-4 mb-4">
+                           <div className="w-12 h-12 bg-[#FFA500] rounded-full flex items-center justify-center">
+                             <span className="text-lg font-bold text-white">{step.step}</span>
+                           </div>
+                           <h3 className="text-xl font-bold text-white">
+                             {step.title}
+                           </h3>
+                         </div>
+                         <p className="text-gray-300 leading-relaxed">
+                           {step.description}
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               ))}
+             </div>
+           </div>
+         </div>
+       </section>
 
       {/* FAQ Section */}
       <section className="py-20">
@@ -226,7 +246,7 @@ const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#2C6EA5] to-[#1e4a75]">
+      {/* <section className="py-20 bg-gradient-to-r from-[#2C6EA5] to-[#1e4a75]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             {service.cta.title}
@@ -241,7 +261,7 @@ const ServiceDetailPage = ({ params }: ServiceDetailPageProps) => {
             {service.cta.buttonText}
           </Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
