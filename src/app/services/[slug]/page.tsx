@@ -39,28 +39,28 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Breadcrumb */}
-            <div className="flex items-center justify-center space-x-2 mb-6 animate-fade-in-down">
-              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105">
+            <div className="flex items-center justify-center space-x-2 mb-6 animate-fade-in-down flex-wrap">
+              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
                 Home
               </Link>
-              <span className="text-[#9AC3E4] animate-pulse">/</span>
-              <Link href="/services" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105">
+              <span className="text-[#9AC3E4] animate-pulse text-sm sm:text-base">/</span>
+              <Link href="/services" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
                 Services
               </Link>
-              <span className="text-[#9AC3E4] animate-pulse">/</span>
-              <span className="text-white font-semibold">{service.title}</span>
+              <span className="text-[#9AC3E4] animate-pulse text-sm sm:text-base">/</span>
+              <span className="text-white font-semibold text-sm sm:text-base">{service.title}</span>
             </div>
 
             {/* Page Title */}
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4 animate-fade-in-up">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 animate-fade-in-up">
               {service.heroTitle}
             </h1>
-            <h2 className="text-2xl lg:text-3xl font-semibold mb-6 text-[#FFA500] animate-fade-in-up animation-delay-200">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-[#FFA500] animate-fade-in-up animation-delay-200">
               {service.heroSubtitle}
             </h2>
 
             {/* Description */}
-            <p className="text-xl text-[#9AC3E4] max-w-3xl mx-auto animate-fade-in-up animation-delay-400">
+            <p className="text-lg sm:text-xl text-[#9AC3E4] max-w-3xl mx-auto animate-fade-in-up animation-delay-400 px-4">
               {service.heroDescription}
             </p>
           </div>
@@ -68,18 +68,18 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content */}
             <div className="animate-fade-in-left">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
                 {service.overview.title}
               </h2>
-              <h3 className="text-xl font-semibold text-[#FFA500] mb-6 animate-pulse">
+              <h3 className="text-lg sm:text-xl font-semibold text-[#FFA500] mb-6 animate-pulse">
                 {service.overview.subtitle}
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-8">
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8">
                 {service.overview.description}
               </p>
               
@@ -99,7 +99,7 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
             </div>
 
             {/* Image */}
-            <div className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl animate-fade-in-right group">
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl animate-fade-in-right group">
               <Image
                 src={service.heroImage}
                 alt={service.title}
@@ -113,18 +113,18 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
       </section>
 
       {/* Dangers Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
               {service.dangers.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               {service.dangers.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {service.dangers.risks.map((risk, index) => (
               <div key={index} className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg hover:shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
                 <h3 className="text-xl font-bold text-red-700 mb-3 group-hover:text-red-800 transition-colors duration-300">
@@ -140,15 +140,15 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-28 bg-gray-200">
+      <section className="py-16 sm:py-20 lg:py-28 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 hover:text-[#3687C9] transition-colors duration-300">
               {service.whyChooseUs.title}
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {service.whyChooseUs.benefits.map((benefit, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-[#2C6EA5] hover:border-[#FFA500] animate-fade-in-up group" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="w-16 h-16 bg-[#FFA500] rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:bg-[#FF8C00] transition-all duration-300">
@@ -167,7 +167,7 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
       </section>
 
              {/* Process Section */}
-       <section className="py-20 bg-gradient-to-br from-[#2C6EA5] to-[#1e4a75] relative overflow-hidden">
+       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#2C6EA5] to-[#1e4a75] relative overflow-hidden">
          {/* Background dots */}
          <div className="absolute inset-0 opacity-10">
            <div className="absolute top-10 left-10 w-2 h-2 bg-[#9AC3E4] rounded-full animate-pulse"></div>
@@ -179,25 +179,42 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
          </div>
 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-           <div className="text-center mb-16 animate-fade-in-up">
-             <h2 className="text-3xl lg:text-4xl font-bold text-[#fefefe] mb-4 hover:text-[#FFA500] transition-colors duration-300">
+           <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#fefefe] mb-4 hover:text-[#FFA500] transition-colors duration-300">
                {service.process.title}
              </h2>
            </div>
 
            <div className="max-w-6xl mx-auto relative">
-             {/* Central timeline */}
-             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#9AC3E4] transform -translate-x-1/2 animate-pulse"></div>
+             {/* Central timeline - hidden on mobile */}
+             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#9AC3E4] transform -translate-x-1/2 animate-pulse"></div>
              
-             <div className="space-y-16">
+             <div className="space-y-8 md:space-y-16">
                {service.process.steps.map((step, index) => (
                  <div key={index} className="relative animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
-                   {/* Timeline node */}
-                   <div className="absolute left-1/2 top-8 w-4 h-4 bg-[#FFA500] rounded-full transform -translate-x-1/2 z-10 animate-pulse"></div>
+                   {/* Timeline node - hidden on mobile */}
+                   <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 bg-[#FFA500] rounded-full transform -translate-x-1/2 z-10 animate-pulse"></div>
                    
-                   {/* Card */}
-                   <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                     <div className={`w-6/12 ${index % 2 === 0 ? 'pr-5' : 'pl-5'}`}>
+                   {/* Mobile layout - full width cards */}
+                   <div className="md:hidden">
+                     <div className="bg-gray-800 p-4 sm:p-6 rounded-xl text-white shadow-lg hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-500 group">
+                       <div className="flex items-center space-x-3 sm:space-x-4 mb-4">
+                         <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FFA500] rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#FF8C00] transition-all duration-300">
+                           <span className="text-base sm:text-lg font-bold text-white">{step.step}</span>
+                         </div>
+                         <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#FFA500] transition-colors duration-300">
+                           {step.title}
+                         </h3>
+                       </div>
+                       <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 text-sm sm:text-base">
+                         {step.description}
+                       </p>
+                     </div>
+                   </div>
+                   
+                                                           {/* Desktop layout - alternating cards */}
+                                           <div className={`hidden md:flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                        <div className={`w-[calc(50%-40px)] ${index % 2 === 0 ? 'pr-0' : 'pl-0'}`}>
                        <div className="bg-gray-800 p-6 rounded-xl text-white shadow-lg hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-500 group">
                          <div className="flex items-center space-x-4 mb-4">
                            <div className="w-12 h-12 bg-[#FFA500] rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#FF8C00] transition-all duration-300">
@@ -221,18 +238,18 @@ const ServiceDetailPage = async ({ params }: ServiceDetailPageProps) => {
        </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 sm:mb-16">
             <div className="inline-flex items-center space-x-2 bg-[#3687C9] rounded-full px-4 py-2 mb-6">
               <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               <span className="text-white text-sm font-medium">FAQs</span>
             </div>
             
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Get answers to the most common questions about our {service.title.toLowerCase()} services.
             </p>
           </div>

@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header Section */}
-      <section className="relative py-20 text-white overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -29,22 +29,22 @@ const AboutPage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Breadcrumb */}
-            <div className="flex items-center justify-center space-x-2 mb-6 animate-fade-in-down">
-              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105">
+            <div className="flex items-center justify-center space-x-2 mb-4 sm:mb-6 animate-fade-in-down">
+              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
                 Home
               </Link>
-              <span className="text-[#9AC3E4]">/</span>
-              <span className="text-white font-semibold">About</span>
+              <span className="text-[#9AC3E4] text-sm sm:text-base">/</span>
+              <span className="text-white font-semibold text-sm sm:text-base">About</span>
             </div>
 
             {/* Page Title */}
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 animate-fade-in-up">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up">
               About
               <span className="block text-[#FFA500] animate-fade-in-up animation-delay-200">Rodent Control Melbourne</span>
             </h1>
 
             {/* Description */}
-            <p className="text-xl text-[#9AC3E4] max-w-3xl mx-auto animate-fade-in-up animation-delay-400">
+            <p className="text-base sm:text-lg lg:text-xl text-[#9AC3E4] max-w-3xl mx-auto animate-fade-in-up animation-delay-400 px-4">
               Your trusted partner in professional pest control services across Melbourne. 
               With years of experience and a commitment to excellence, we protect your home and business.
             </p>
@@ -53,37 +53,37 @@ const AboutPage = () => {
       </section>
 
       {/* About Content Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Image */}
             <div className="relative animate-fade-in-left">
-              <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
+              <div className="relative h-80 sm:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
                 <Image
                   src="/About4.jpg"
                   alt="Professional pest control technician in action"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               {/* Decorative Element */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#FFA500] rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300"></div>
+              <div className="absolute -bottom-6 -right-6 w-20 h-20 sm:w-24 sm:h-24 bg-[#FFA500] rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300"></div>
             </div>
 
             {/* Right Column - Content */}
-            <div className="space-y-8 animate-fade-in-right">
+            <div className="space-y-6 sm:space-y-8 animate-fade-in-right">
               <div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-6 hover:text-[#3687C9] transition-colors duration-300">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C6EA5] mb-4 sm:mb-6 hover:text-[#3687C9] transition-colors duration-300">
                   Your Trusted Pest Control Experts
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
                   At Rodent Control Melbourne, we understand that pest infestations can be stressful and disruptive. 
                   That's why we've built our reputation on providing reliable, effective, and safe pest control solutions 
                   that give you peace of mind.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   Our team of certified professionals combines years of experience with the latest industry techniques 
                   and eco-friendly products to deliver results that last. We're not just exterminators – we're your 
                   partners in creating a safe, healthy environment for your family and business.
@@ -91,7 +91,7 @@ const AboutPage = () => {
               </div>
 
               {/* Key Features */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="flex items-start space-x-4 group hover:transform hover:translate-x-2 transition-all duration-300">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#3687C9] rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:bg-[#2C6EA5] transition-all duration-300">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

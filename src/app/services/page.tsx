@@ -149,54 +149,54 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-             {/* Header Section */}
-       <section className="relative py-20 text-white overflow-hidden">
-         {/* Background Image */}
-         <div className="absolute inset-0">
-           <Image
-             src="/Services-1.png"
-             alt="Professional pest control technician spraying"
-             fill
-             className="object-cover"
-             style={{ objectPosition: 'center 25%' }}
-             priority
-           />
-           {/* Dark Overlay for Text Readability */}
-           <div className="absolute inset-0 bg-black/60"></div>
-         </div>
-         
-         {/* Content */}
-         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="text-center">
-             {/* Breadcrumb */}
-             <div className="flex items-center justify-center space-x-2 mb-6">
-               <Link href="/" className="text-[#9AC3E4] hover:text-white transition-colors duration-200">
-                 Home
-               </Link>
-               <span className="text-[#9AC3E4]">/</span>
-               <span className="text-white">Services</span>
-             </div>
+      {/* Header Section */}
+      <section className="relative py-12 sm:py-16 lg:py-20 text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/Services-1.png"
+            alt="Professional pest control technician spraying"
+            fill
+            className="object-cover"
+            style={{ objectPosition: 'center 25%' }}
+            priority
+          />
+          {/* Dark Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-center space-x-2 mb-4 sm:mb-6">
+              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-colors duration-200 text-sm sm:text-base">
+                Home
+              </Link>
+              <span className="text-[#9AC3E4] text-sm sm:text-base">/</span>
+              <span className="text-white text-sm sm:text-base">Services</span>
+            </div>
 
-             {/* Page Title */}
-             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-               Our Pest Control
-               <span className="block text-[#FFA500]">Services</span>
-             </h1>
+            {/* Page Title */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+              Our Pest Control
+              <span className="block text-[#FFA500]">Services</span>
+            </h1>
 
-             {/* Description */}
-             <p className="text-xl text-[#9AC3E4] max-w-3xl mx-auto">
-               Comprehensive pest control solutions for residential and commercial properties. 
-               Professional, safe, and guaranteed results with our expert team.
-             </p>
-           </div>
-         </div>
-       </section>
+            {/* Description */}
+            <p className="text-base sm:text-lg lg:text-xl text-[#9AC3E4] max-w-3xl mx-auto px-4">
+              Comprehensive pest control solutions for residential and commercial properties. 
+              Professional, safe, and guaranteed results with our expert team.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Services Grid Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {allServices.map((service) => (
               <Link 
                 key={service.id} 
@@ -204,37 +204,37 @@ const ServicesPage = () => {
                 className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
               >
                 {/* Service Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-40 sm:h-48 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
                 {/* Service Content */}
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   {/* Service Title */}
-                  <h3 className="text-xl font-bold text-[#2C6EA5] mb-3 group-hover:text-[#FFA500] transition-colors duration-200">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#2C6EA5] mb-2 sm:mb-3 group-hover:text-[#FFA500] transition-colors duration-200">
                     {service.title}
                   </h3>
 
                   {/* Service Description */}
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
                     {service.description}
                   </p>
 
                   {/* Learn More Button */}
                   <div className="flex items-center justify-between">
-                    <span className="text-[#FFA500] font-semibold text-sm group-hover:text-[#FF8C00] transition-colors duration-200">
+                    <span className="text-[#FFA500] font-semibold text-xs sm:text-sm group-hover:text-[#FF8C00] transition-colors duration-200">
                       Learn More
                     </span>
                     <svg 
-                      className="w-5 h-5 text-[#FFA500] group-hover:translate-x-1 transition-transform duration-200" 
+                      className="w-4 h-4 sm:w-5 sm:h-5 text-[#FFA500] group-hover:translate-x-1 transition-transform duration-200" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -246,8 +246,6 @@ const ServicesPage = () => {
               </Link>
             ))}
           </div>
-
-          
         </div>
       </section>
     </div>

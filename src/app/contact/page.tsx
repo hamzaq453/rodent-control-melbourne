@@ -66,7 +66,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header Section */}
-      <section className="relative py-20 text-white overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -84,22 +84,22 @@ const ContactPage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Breadcrumb */}
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-colors duration-200">
+            <div className="flex items-center justify-center space-x-2 mb-4 sm:mb-6">
+              <Link href="/" className="text-[#9AC3E4] hover:text-white transition-colors duration-200 text-sm sm:text-base">
                 Home
               </Link>
-              <span className="text-[#9AC3E4]">/</span>
-              <span className="text-white">Contact</span>
+              <span className="text-[#9AC3E4] text-sm sm:text-base">/</span>
+              <span className="text-white text-sm sm:text-base">Contact</span>
             </div>
 
             {/* Page Title */}
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
               Contact
               <span className="block text-[#FFA500]">Rodent Control Melbourne</span>
             </h1>
 
             {/* Description */}
-            <p className="text-xl text-[#9AC3E4] max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-[#9AC3E4] max-w-3xl mx-auto px-4">
               Get in touch with our expert pest control team. We're here 24/7 to help you with all your pest control needs.
             </p>
           </div>
@@ -107,27 +107,27 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Contact Info Cards */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {/* Phone */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-[#3687C9] rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-center space-x-3 sm:space-x-4 mb-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#3687C9] rounded-lg flex items-center justify-center">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#2C6EA5]">Call Us</h3>
-                    <p className="text-gray-600">24/7 Emergency Service</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-[#2C6EA5]">Call Us</h3>
+                    <p className="text-gray-600 text-sm sm:text-base">24/7 Emergency Service</p>
                   </div>
                 </div>
                 <a 
                   href="tel:0466660066" 
-                  className="text-lg font-bold text-[#3687C9] hover:text-[#2C6EA5] transition-colors duration-200"
+                  className="text-base sm:text-lg font-bold text-[#3687C9] hover:text-[#2C6EA5] transition-colors duration-200"
                 >
                   0451 003300
                 </a>
@@ -179,15 +179,15 @@ const ContactPage = () => {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-3xl font-bold text-[#2C6EA5] mb-6">Get In Touch</h2>
-                <p className="text-gray-600 mb-8">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#2C6EA5] mb-4 sm:mb-6">Get In Touch</h2>
+                <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
                   Fill out the form below and we'll get back to you within 24 hours. 
                   For urgent pest control emergencies, please call us directly.
                 </p>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     {/* Name */}
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
